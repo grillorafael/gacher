@@ -1,10 +1,10 @@
 {
-    "name": "watcher",
-    "version": "1.0.0",
+    "name": "gacher",
+    "version": "1.1.0",
     "description": "",
     "main": "index.js",
     "bin": {
-        "watcher": "index.js"
+        "gacher": "index.js"
     },
     "author": "Rafael Grillo Abreu <grillorafael@gmail.com> (http://rgrillo.com)",
     "license": "MIT",
