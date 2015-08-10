@@ -2,19 +2,24 @@
 
 var argv = require('optimist').argv;
 var gaze = require('gaze');
-// console.log(argv);
+
+var pattern = argv.p;
+var cmd = argv.c;
 
 var exec = require('child_process').exec;
 function puts(error, stdout, stderr) {
     console.log(stdout);
 }
 
+if(pattern.indexOf(' ') !== -1) {
+    pattern = pattern.split(' ');
+}
 
 try {
-    gaze(argv.p, function(err, watcher) {
+    gaze(pattern, function(err, watcher) {
         console.log('Watching for glob %s', argv.p);
         this.on('all', function(event, filepath) {
-            exec(argv.c, puts);
+            exec(cmd, puts);
         });
     });
 } catch (e) {
