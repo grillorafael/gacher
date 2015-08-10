@@ -1,0 +1,15 @@
+{
+    "name": "watcher",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "bin": {
+        "watcher": "index.js"
+    },
+    "author": "Rafael Grillo Abreu <grillorafael@gmail.com> (http://rgrillo.com)",
+    "license": "MIT",
+    "dependencies": {
+        "gaze": "^0.5.1",
+        "optimist": "^0.6.1"
+    }
+}
