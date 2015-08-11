@@ -1,10 +1,14 @@
 {
     "name": "gacher",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "description": "",
     "main": "index.js",
     "bin": {
         "gacher": "index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/grillorafael/gacher"
     },
     "author": "Rafael Grillo Abreu <grillorafael@gmail.com> (http://rgrillo.com)",
     "license": "MIT",
